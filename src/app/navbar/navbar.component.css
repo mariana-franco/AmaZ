@@ -1,0 +1,220 @@
+.cima {
+  padding-right: 8px;
+  padding-left: 8px;
+  background-color: #252f15 !important;
+}
+
+.navbar-logo {
+  background-color: #252f15 !important;
+}
+
+.navbar-collapse {
+  background-color: rgba(37, 47, 21, 0.0) !important;
+  width: 30px;
+}
+
+.navbar-light {
+  background-color: rgba(37, 47, 21, 0.75) !important;
+  padding: 2px !important;
+}
+
+h5 {
+  color: rgb(175, 175, 175) !important;
+  text-transform: uppercase;
+  font-family: 'Ubunto', sans-serif;
+  font-size: .6em;
+  display: inline-block;
+  margin-bottom: .5rem;
+  margin-right: .5rem;
+}
+
+label {
+  color: rgb(175, 175, 175) !important;
+  text-transform: uppercase;
+  font-family: 'Ubunto', sans-serif;
+  font-size: .6em;
+}
+
+.mat-button {
+  border-radius: 10px;
+  outline: none;
+  text-transform: uppercase;
+  color: #F8ECEC !important;
+  text-transform: uppercase!important;
+  font-family: 'Ubunto', sans-serif;
+  font-size: .75em;
+  margin: auto;
+}
+
+.logo {
+  text-align: center !important;
+  padding-right: 7em;
+  margin-top: .5%;
+}
+
+.botao-sair {
+  background: brown;
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+}
+
+/* pesquisa */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar {
+  background-color: #252f15 !important;
+  color: #F8ECEC;
+  padding: 1%;
+  width: 80%;
+  border: none;
+  font-family: 'Ubunto', sans-serif;
+  font-size: 70%;
+  border-bottom: #F8ECEC solid 1px;
+  transition: 0.5s;
+}
+
+.searchbar::placeholder {
+  color: rgba(248, 236, 236, 0.25); 
+}
+
+.searchbar:focus {
+  width: 80%;
+  padding: auto;
+  font-family: 'Ubunto', sans-serif;
+  font-size: 75%;
+  transition: 0.5s;
+  border-bottom: #F8ECEC solid 1px;
+  outline: none;
+}
+.edit-btn {
+  border-color: #252f15;
+}
+.btn-search {
+  cursor: pointer;
+  color: #F8ECEC;
+  text-decoration: none !important;
+  font-family: 'Ubunto', sans-serif;
+  font-size: 1em;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+span {
+  color: rgba(166, 99, 28, 0.6);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+/* Estilo do modal */
+.modal-content {
+  background-image: url("../../assets/fundomod.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: none;
+}
+.class-input {
+  background-color: transparent;
+  padding: 4%;
+  width: 100% !important;
+  outline: none;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-weight: 300;
+  font-size: 1em;
+}
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+.example-full-width {
+  border-bottom: none;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+.form-elegant .font-small {
+  font-size: 0.8rem;
+}
+.form-elegant .z-depth-1a {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(66, 177, 62, 0.514), 0 4px 12px 0 rgba(66, 177, 62, 0.514);
+  box-shadow: 0 2px 5px 0 rgba(66, 177, 62, 0.514), 0 4px 12px 0 rgba(66, 177, 62, 0.514);
+  margin: 5px;
+}
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(86, 182, 67, 0.28), 0 4px 15px 0 rgba(86, 182, 67, 0.28);
+  box-shadow: 0 5px 11px 0 rgba(86, 182, 67, 0.28), 0 4px 15px 0 rgba(86, 182, 67, 0.28);
+}
+
+.form-elegant .modal-header {
+  border-bottom: none;
+}
+
+.modal-dialog .form-elegant .btn .fab {
+  color: #252f15 !important;
+}
+
+.form-elegant .modal-body,
+.form-elegant .modal-footer {
+  font-weight: 200;
+}
+.modal-header{
+  background: #252f15 transparent;
+  color: #a6641c;
+  font-family: "Open Sans", sans-serif;
+}
+
+.modal-title {
+  margin-top: 2%;
+  text-align: center!important;
+}
+
+.entrar {
+  background-color: #252f15 !important;
+  padding: 1%;
+  color: #f8ecec;
+  width: 40%;
+  display: inline-block;
+  margin-bottom: 1%;
+  border-radius: 25px;
+  text-align: center !important;
+  font-family: "Open Sans", sans-serif;
+  margin-top: -10%;
+}
+.logar {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.linkc {
+  font-size: 1em;
+  color: #252f15 !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.links {
+  font-size: 1em;
+  color: #505050  !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  margin-top: -5%;
+  text-align: right;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-content  {
+    width: 95%;
+    height: 95%;
+    margin-left: 2.5%;
+  }
+}

@@ -1,0 +1,194 @@
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class=" carousel-item active">
+      <img class="edit-img d-block w-100 img-fluid" src="../../assets/amazoniafundo.jpg"
+        alt="Imagem 1 carousel Amazônia">
+      <div class="carousel-caption">
+        <h2 class="edit-font-carousel">conheça a
+          <span>AMAZÔNIA</span>
+        </h2>
+        <h3 class="text">A Amazônia é a nossa verdadeira
+          casa! Isso vale pro mundo todo, já que lá a gente encontra a maior biodiversidade do planeta.
+        </h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="edit-img d-block w-100 img-fluid" src="../../assets/turiarte.jpg" alt="Imagem 2 carousel Criação">
+      <div class="fundo">
+        <div class="carousel-caption">
+          <h2 class="edit-font-carousel">conheça o que vem da
+            <span>AMAZÔNIA</span>
+          </h2>
+          <h3 class="text">Muito se fala
+            sobre como preservar essa riqueza e não tem como a gente não lembrar das comunidades locais! Que tal
+            promover o artesanato local a partir de produtos sustentáveis? Pronto pra se
+            apaixonar? :)</h3>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="edit-img d-block w-100 img-fluid" src="../../assets/urucurea.jpg" alt="Imagem 3 carousel Cesto">
+      <div class="carousel-caption">
+        <h2 class="edit-font-carousel">e
+          <span>PORQUÊ?</span></h2>
+        <h3 class="text">Porque valorizar quem vive na floresta, gerar renda e promover melhores condições de vida,
+          significa
+          apoiar quem protege nosso patrimônio e mantém viva a cultura das diferentes etnias e formas de manifestação
+          cultural. Isso é cuidar da Amazônia.</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="edit-img d-block w-100 img-fluid" src="../../assets/vilafranca.jpg"
+        alt="Imagem 3 carousel Comunidade">
+      <div class="carousel-caption">
+        <h2 class="edit-font-carousel">conheça as
+          <span>COMUNIDADES</span></h2>
+        <h5 class="text">A gente acredita na nossa gente!</h5>
+        <p class="edit-font-carousel animated zoomIn" style="animation-delay:3s">
+          <a [routerLink]="'/comunidades'">Conhecer!</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
+<br><br>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 parag1">
+      <h1>Você pode ajudar</h1>
+      <p class="parag1">É fundamental promover ações voltadas à conservação dos ativos da floresta Amazônica e à
+        melhoria da qualidade de vida da população local. Estimular alternativas econômicas que valorizam a floresta em
+        pé, contribuem para a redução de desmatamentos e estabelecem novos referenciais de desenvolvimento para as
+        gerações atuais e futuras.
+      </p>
+      <p class="parag1">O artesanato confeccionado pelas mãos talentosas dos caboclos e indígenas é algo imutável e
+        característico, que traduz a cultura do povo amazonense por meio de um dom que é passado de geração a geração. A
+        inspiração? A natureza e sua exuberância.
+      </p>
+      <div class="botao">
+        <button class="edit-a align-content-center" type="button" [routerLink]="'/produtos'" mat-stroked-button
+          color="gradient">CONHEÇA
+          NOSSOS PRODUTOS</button>
+      </div>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 parag2">
+      <h1>Mude o mundo</h1>
+      <p class="parag2">É uma arte, é um modo de vida,
+        é criar laços e eternizar uma cultura. Da coleta de elementos naturais da floresta para tecer, trançar, criar,
+        tingir, até o momento de esculpir e lapidar, é tudo feito com imenso cuidado, amor e cooperação.
+      </p>
+      <p class="parag2">A iniciativa junto às comunidades ribeirinhas, tem como viés o consumo consciente por meio da
+        criação de produtos sustentáveis, disseminando a ideia de que é possível produzir bens de consumo a partir do
+        uso eficiente dos recursos da floresta e respeitando quem participa ativamente dessa produção.
+      </p>
+      <div class="botao">
+        <button class="edit-a" type="button" [routerLink]="'/comunidades'" mat-stroked-button color="gradient">CONHEÇA
+          AS COMUNIDADES</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<!-- CAROUSEL MAIS VENDIDOS -->
+<div class="container justify-content-center">
+  <h1>Mais vendidos</h1>
+  <div id="demo" class="carousel slide justify-content-center" data-ride="carousel">
+
+    <ul class="carousel-indicators mb-0 pb-0">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <div class="carousel-inner no-padding my-5">
+
+      <div class="carousel-item active">
+
+        <div class="col-xs-4 col-sm-4 col-md-4" *ngFor="let produtoTemp of produtoList1">
+          <a (click)="mostrar(produtoTemp)" class="slider_info pointer">
+            <img class="img-fluid card-img-top" src="{{produtoTemp.linkFoto}}">
+            <div class="card-img-overlay t_img">
+            </div>
+          </a>
+          <p class="descricao">{{produtoTemp.titulo}}</p>
+          <p class="preco"> R$ {{produtoTemp.preco}}</p>
+        </div>
+      </div>
+      <!-- <div class="col-xs-4 col-sm-4 col-md-4">
+          <a (click)=produtos() class="slider_info pointer">
+            <img class="img-fluid card-img-top rounded-bottom" src="../../assets/fruteira.jpg">
+            <div class="card-img-overlay t_img">
+            </div>
+          </a>
+          <p class="descricao">fruteira de mesa de folha do wambé</p>
+          <p class="preco">R$ 369,00</p>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <a (click)=produtos() class="slider_info pointer">
+            <img class="img-fluid card-img-top rounded-bottom" src="../../assets/bolsacolorida.jpg">
+            <div class="card-img-overlay t_img">
+            </div>
+          </a>
+          <p class="descricao">bolsa colorida com alça em sementes de açaí</p>
+          <p class="preco">R$ 79,90</p>
+        </div>
+      </div> -->
+      <div class="carousel-item">
+        <div class="col-xs-4 col-sm-4 col-md-4" *ngFor="let produtoTemp of produtoList2">
+          <a (click)="mostrar(produtoTemp)" class="slider_info pointer">
+            <img class="img-fluid card-img-top" src="{{produtoTemp.linkFoto}}">
+            <div class="card-img-overlay t_img">
+            </div>
+          </a>
+          <p class="descricao">{{produtoTemp.titulo}}</p>
+          <p class="preco"> R$ {{produtoTemp.preco}}</p>
+        </div>
+      </div>
+      <!-- <div class="col-xs-4 col-sm-4 col-md-4">
+          <a (click)=produtos() class="slider_info pointer">
+            <img class="img-fluid card-img-top" src="../../assets/bonecaemtecido.jpg">
+            <div class="card-img-overlay t_img">
+            </div>
+          </a>
+          <p class="descricao">boneca em tecido fruta (guaraná)</p>
+          <p class="preco">R$ 135,00</p>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <a (click)=produtos() class="slider_info pointer">
+            <img class="img-fluid card-img-top" src="../../assets/colararomatizador.jpg">
+            <div class="card-img-overlay t_img">
+            </div>
+          </a>
+          <p class="descricao">vaso coringa da amazônia - m</p>
+          <p class="preco">R$ 429,00</p>
+        </div>
+      </div>
+    </div> -->
+
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon sp"><i class="carousel-button fas fa-angle-left"></i></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-prev-icon sp"><i class="carousel-button fas fa-angle-right"></i></span>
+      </a>
+    </div>
+  </div>

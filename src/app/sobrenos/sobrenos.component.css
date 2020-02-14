@@ -1,0 +1,181 @@
+.container {
+  margin-bottom: 5%;
+}
+.imagemfundo {
+  background-image: url("../../assets/fundosobrenos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  margin: 0 !important;
+  text-align: center;
+}
+
+.recuo {
+  padding: 15%;
+  padding-top: 1% !important;
+  padding-bottom: 3% !important;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  text-indent: 2em;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center !important;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  color: #a6641c;
+  padding: 5%;
+  padding-bottom: 1% !important;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h3 {
+  text-align: center !important;
+  font-family: "Ubuntu", sans-serif;
+  padding: 2%;
+  margin-bottom: -5%;
+  margin-top: 2%;
+  text-transform: uppercase;
+  color: #a6641c;
+  font-weight: bold;
+}
+
+.single-team {
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgb(143, 143, 143);
+  margin: 2%;
+}
+
+.team-img {
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.team-img img {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.single-team:hover .team-img img {
+  transform: scale(1.1);
+}
+
+.team-content {
+  height: 75px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: all 0.4s;
+  background: rgba(37, 47, 21, 0.8);
+  z-index: 5;
+}
+
+/* .single-team:hover .team-content {
+  height: 300px;
+} */
+
+.team-info {
+  padding: 5px 20px 5px 20px;
+  transition: all 0.5s;
+  font-family: "Open sans", sans-serif;
+}
+
+.single-team:hover .team-content {
+  background: rgba(37, 47, 21, 0.8);
+  height: 100%;
+}
+
+.single-team .team-content .team-info h3 {
+  text-transform: uppercase;
+  color: #f8ecec;
+  font-size: 16px;
+  margin: 5px;
+  font-family: "Open sans", sans-serif;
+  padding: 2%;
+}
+
+.team-info p {
+  margin-top: 5px;
+  color: #bbd28e;
+  font-family: "Open sans", sans-serif;
+}
+
+.team-text {
+  color: #f8ecec;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  font-family: "Open sans", sans-serif;
+  text-align: center !important;
+  margin-top: 5%;
+}
+
+/* Ícones das redes sociais */
+.wrapper {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.social-icons .fab {
+  font-size: 1.5em;
+}
+
+.social-icons .fab {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #f8ecec;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fab {
+  border-radius: 50%;
+}
+
+.social-icons .fab:hover,
+.social-icons .fab:active {
+  color: #bbd28e;
+  box-shadow: 1px 1px 3px #333;
+}
+
+.social-icons .fa-github {
+  background-color: rgba(37, 47, 21, 0.8);
+}
+.social-icons .fa-linkedin-in {
+  background-color: rgba(37, 47, 21, 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+  .recuo {
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+  }
+  h1 {
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.s ease-in-out;
+  }
+  #leo {
+    font-size: .9em;
+  }
+  #leotit {
+    font-size: .8em;
+  }
+}

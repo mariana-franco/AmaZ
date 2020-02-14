@@ -1,0 +1,141 @@
+.container-fluid {
+  background-color: rgba(255, 255, 255);
+  background-image: url("../../assets/fundologin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100ch;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+.form-group {
+  margin-top: -2%;
+  width: 100%;
+  text-align: center !important;
+}
+.form-control {
+  cursor: Text;
+  font-size: 0.9em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-control.erro {
+  cursor: Text;
+  border: 1.5px solid rgba(175, 0, 0, 0.8);
+  background-color: rgba(223, 0, 48, 0.377);
+  text-align: center !important;
+}
+
+h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #a6641c;
+}
+
+input {
+  background-color: transparent;
+  width: 100% !important;
+  outline: none;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  font-weight: 300;
+  font-size: 1em;
+  resize: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.btn {
+  background-color: rgba(37, 47, 21, 0.8) !important;
+  padding: 1%;
+  color: #f8ecec;
+  width: 20%;
+  display: inline-block;
+  margin-bottom: 1%;
+  border-radius: 5px;
+  text-align: center !important;
+  font-family: "Open Sans", sans-serif;
+  margin-top: -10%;
+}
+
+#emailHelp {
+  display: block;
+  margin-left: 10%;
+  text-align: left;
+  font-size: 9px;
+}
+
+.alert {
+  padding: 3px;
+  margin: auto;
+  text-align: center;
+  width: 250px;
+  font-size: 15px;
+}
+
+.linkc {
+  font-size: 1em;
+  color: #252f15 !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.links {
+  font-size: 1em;
+  color: #505050 !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  margin-top: -5%;
+}
+.linkfp {
+  font-size: 1em;
+  color: #505050 !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  margin-top: 2%;
+  text-align: right;
+}
+.logar {
+  margin-top: 2rem;
+  text-align: center;
+}
+.logar2 {
+  margin-top: .5rem;
+  text-align: center;
+}
+
+/* Estilo para retirar o sublinhado do input Material Angular */
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+.example-full-width {
+  border-bottom: none;
+  width: 70%;
+  padding: 0!important;
+  font-family: "Open Sans", sans-serif!important;
+}
+
+/* Responsividade CSS */
+@media (min-width: 576px) {
+  .container {
+    width: 576px !important;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 992px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px !important;
+  }
+}

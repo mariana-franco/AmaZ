@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="corpo col-md-6 pt-5 pb-5">
+      <h2>Inserir Produto</h2>
+
+      <div class="form-group">
+        <mat-select style="border-bottom:2px solid gray;border-right:1px solid gray;border-radius: 3px;" matInput
+          placeholder="Categoria" class="example-full-width mt-4 mb-4" [(ngModel)]="idCat" (selectionChange)="getIdCategoria()"
+          id="inlineFormCustomSelectPref">
+          <mat-option class="option" [value]="0" selected>-------- ESCOLHA UMA CATEGORIA ---------</mat-option>
+          <mat-option *ngFor="let categoria of categorias" name="id" [value]="categoria.id">
+            {{categoria.id}} -
+            {{categoria.categoria}}</mat-option>
+        </mat-select>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Titulo" name="titulo" class="form-control" required="required" type="text"
+            value="{{produto.titulo}}" [(ngModel)]="produto.titulo" required>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+          <textarea style="border-bottom: 2px solid gray;border-right: 2px solid gray" matInput placeholder="Descrição"
+            name="descricao" class="form-control" required="required" type="text" value="{{produto.descricao}}"
+            [(ngModel)]="produto.descricao" rows="4" required></textarea>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="URL Foto" name="linkFoto" class="form-control" required="required" type="text"
+            value="{{produto.linkFoto}}" [(ngModel)]="produto.linkFoto" required>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Preço" name="preco" class="form-control" required="required" type="text"
+            value="{{produto.preco}}" [(ngModel)]="produto.preco" required>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Quantidade em Estoque" name="qtdEstoque" class="form-control" required="required"
+            type="text" value="{{produto.qtdEstoque}}" [(ngModel)]="produto.qtdEstoque" required>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <button class="btn" id="inserir" (click)="insert()">Confirmar</button>
+      </div>
+
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>

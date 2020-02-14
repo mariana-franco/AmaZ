@@ -1,0 +1,167 @@
+.edit-a {
+    margin-top: 2%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Ubuntu", sans-serif;
+    color: #a6641c;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 80%;
+    background-color: rgba(187, 210, 142, 0.3);
+}
+.edit-a:hover{
+    box-shadow: 1px 1px 5px #a6631c75;
+}
+.edit-a a{
+    color: #a6641c;
+}
+input {
+    margin-left: 10%;
+    width: 80%;
+}
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3em;
+    color: #F8ECEC;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(166, 99, 28);
+}
+
+h4 {
+    font-family: 'Ubunto', sans-serif;
+    font-size: .9em;
+    text-align: center;
+    color: rgb(37, 47, 21)!important;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+#collapseTwo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    text-align: center;
+    color: rgba(50, 50, 50)!important;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em!important;
+    text-align: center;
+    color: rgba(166, 99, 28)!important;
+    text-transform: uppercase;
+    font-weight: bold!important;
+}
+mdb-card {
+    box-shadow: 0 1px 3px rgba(50, 50, 50, 0.12), 0 1px 2px rgba(50, 50, 50, 0.24);
+    transition: all 0.25s ease-in-out;
+}
+mdb-card:hover {
+    box-shadow: 0 10px 20px rgba(50, 50, 50, 0.19), 0 6px 6px rgba(50, 50, 50, 0.23);
+    cursor: pointer;
+}
+mdb-card-body {
+    padding: 5px!important;
+    background-color: rgba(187, 210, 142, 0.3);
+}
+
+.bg-cover{
+    background: url("../../assets/fundoprodutos.jpg") ;
+    background-size: 100%;
+    background-attachment: fixed; 
+    object-fit: cover; 
+    object-position: middle;
+    background-repeat: no-repeat;
+}
+.bg-cover img {
+    margin-top: -50%;
+}
+.fa-star {
+    color: #a6641c;
+    font-size: .7em;
+}
+
+
+/* Quando aparece apenas um produto */
+h3 {
+    font-family: 'Ubunto', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(37, 47, 21)!important;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    color: rgba(50, 50, 50)!important;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.lib-header-seperator {
+    height: 1px;
+    width: 100px;
+    background-color: #a6641c;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, .10);
+    box-shadow: 0 0 15px 0 rgba(50, 50, 50, .20);
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(50, 50, 50)!important;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.preco {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em!important;
+    text-align: center;
+    color: rgba(166, 99, 28)!important;
+    text-transform: uppercase;
+    font-weight: bold!important;
+}
+
+/* Search Bar */
+.has-search {
+    margin-top: 2%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em!important;
+}
+
+.form-control {
+    padding-left: 2.375rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7em!important;
+    padding-top: 3%;
+}
+.fa {
+    margin-left: 10%;
+    cursor: pointer;
+    
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    /* pointer-events: none; */
+    color: rgba(166, 99, 28);
+}
+.fa-star {
+    margin-left: 0!important;
+}

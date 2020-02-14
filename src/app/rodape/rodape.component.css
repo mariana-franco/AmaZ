@@ -1,0 +1,113 @@
+
+.container {
+    margin-top: -50px;
+}
+.p{
+    color:#252f15;
+    line-height:25px ;
+    text-align: justify;
+}
+.edit-h{
+    color: #fff;
+}
+.footer-top{
+    background: #BBD28E!important;
+    padding: 50px;
+    padding-bottom: 0!important;
+}
+.segment-one h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 15px 0;
+    text-align: justify;
+}
+.segment-two h2{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px!important;
+    text-align: justify;
+}
+.segment-two h2:before{
+    content: '|';
+    color: #252f15;
+    padding-right: 10px;
+}
+.segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-two  li {
+    border-bottom: 1px solid rgba (255,255,255,0.3);
+    line-height: 30px;
+}
+.segment-two ul li a {
+    color: #252f15;
+    text-decoration: none;
+}
+.segment-three h2{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px!important;
+}
+.segment-three h2:before{
+    content: '|';
+    color: #252f15;
+    padding-right: 10px;
+}
+.segment-three a{
+    background: #252f15;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.452);
+}
+.segment-three a i{
+    font-size:20px;
+    color:#fff;
+    padding: 10px 12px;
+}
+.segment-four h2{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px!important;
+}
+.segment-four h2:before{
+    content: '|';
+    color: #252f15;
+    padding-right: 10px;
+}
+.segment-four form input[type=submit]{
+    background: #252f15;
+    margin-top: 5px;
+    border:none;
+    padding: 3px 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-bottom-text{
+    text-align: center;
+    line-height: 75px;
+    margin: 0;
+    margin-top: 3%;
+}
+
+/* Responsividade CSS */
+@media only screen and (min-width: 768px) and(max-width: 991px) {
+.md-mb-30{
+    margin-bottom: 30px;
+}
+@media only screen and (max-width:767px){
+    .sm-mb-30{
+        margin-bottom:30px ;
+    }
+    .footer-top{
+        padding: 50px ;
+    }
+}
+}

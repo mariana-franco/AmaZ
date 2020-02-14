@@ -1,0 +1,73 @@
+<div class="body bg-gradient-primary">
+    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center mt-4 mb-4">
+            <div class="sidebar-brand-icon rotate-n-15">
+                <i class="far fa-user"></i>
+            </div>
+        </a>
+        <a class="sidebar-brand d-flex align-items-center justify-content-center mt-4 mb-4">
+        <div [routerLink]="'/admin'" class="sidebar-brand-text click mx-3">{{usuario.nome}}</div>
+        <a (click)="alterarDados()"><i class="fa fa-pen click mr-3"></i></a>
+        <a *ngIf="alterar == true" (click)="alterarOk()"><i class="fa fa-check click mr-4"></i></a>
+        </a>
+        <a class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-phone mr-3"></i>
+            <a class="mt-2 mb-0" *ngIf="alterar == false">{{usuario.telefone}}</a>
+            <input *ngIf="alterar == true" matInput placeholder="Telefone" name="telefone"
+                class="search-form waves-light md-form effect-1" type="text" value="{{usuario.telefone}}"
+                [(ngModel)]="telefone"><span class="focus-border"></span>
+        </a>
+
+        <a class="list-group-item list-group-item-action waves-effect">
+            <i class="far fa-envelope mr-3"></i>
+            <a class="mt-2 mb-0" *ngIf="alterar == false">{{usuario.email}}</a>
+            <input *ngIf="alterar == true" matInput placeholder="Email" name="email"
+                class="search-form waves-light md-form effect-1" type="text" value="{{usuario.email}}"
+                [(ngModel)]="email"><span class="focus-border"></span>
+        </a>
+
+        <hr class="sidebar-divider">
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Funções</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Você pode:</h6>
+                    <a class="collapse-item recolhe txt-color" [routerLink]="'/admin/inserir-produto'">Inserir
+                        produtos</a>
+                    <a class="collapse-item recolhe txt-color" [routerLink]="'/admin/alterar-produto'">Alterar/Deletar
+                        produtos</a>
+                        <a class="collapse-item recolhe txt-color" [routerLink]="'/admin/listar-vendas'">Lista de Vendas</a>
+                        
+                </div>
+            </div>
+        </li>
+        <hr class="sidebar-divider">
+        <div class="sidebar-heading">
+        </div>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                aria-expanded="true" aria-controls="collapsePages">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>Mapa do Site</span>
+            </a>
+            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Acessos do site:</h6>
+                    <a class="collapse-item" [routerLink]="'/home'">Home</a>
+                    <a class="collapse-item" [routerLink]="'/produtos'">Produtos</a>
+                    <a class="collapse-item" [routerLink]="'/sobrenos'">Sobre Nós</a>
+                    <a class="collapse-item" [routerLink]="'/comunidades'">Comunidades</a>
+                    <a class="collapse-item" [routerLink]="'/contato'">Contato</a>
+                    <a class="collapse-item" [routerLink]="'/faq'">Ajuda</a>
+                </div>
+            </div>
+        </li>
+        <hr class="sidebar-divider d-none d-md-block">
+     
+    </ul>
+</div>

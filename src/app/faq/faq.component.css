@@ -1,0 +1,213 @@
+.single-search {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #fdfdfd;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #a6641c!important;
+  text-transform: uppercase;
+  padding: 1%;
+}
+h3 {
+  margin-top: 7%;
+  text-align: center!important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+}
+h5 {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+/* EDIÇÃO DO LOGO AMAZ */
+
+.edit-logo-amaz{
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 7%!important;
+}
+
+/* ---------------------------------------- SEARCH BOX */
+
+.searchbar{
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 50px;
+  background-color:rgba(187, 210, 142, 0.7)!important; 
+  border-radius: 25px;
+  padding: 5px;
+  }
+  .search_input{
+  color:#000000 !important;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+
+  }
+  .searchbar > .search_input{
+  padding: 0 10px;
+  width: 500px;
+  }
+  .search_icon{
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #252f15!important;
+  }
+
+
+.panel-group {
+    padding: 5%;
+    margin-top: -2%;
+}
+#accordion .panel {
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 15px 10px;
+}
+#accordion .panel-heading {
+    border-radius: 30px;
+    padding: 0;
+}
+#accordion .panel-title a {
+    background: rgba(187, 210, 142, 0.7) none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    color: #252f15;
+    display: block;
+    font-size: .75em;
+    padding: 12px 20px 12px 50px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    height: 50px;
+}
+#accordion .panel-title a.collapsed {
+    background: rgba(166, 99, 28, 0.02) none repeat scroll 0 0;
+    border: 1px solid rgba(187, 210, 142, 0.5);
+    color: rgb(88, 88, 88);
+    height: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: .75em;
+}
+#accordion .panel-title a::after, #accordion .panel-title a.collapsed::after {
+    background: rgba(187, 210, 142) none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.58);
+    color: #a6641c;
+    font-weight: bold;
+    content: "+";
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    height: 55px;
+    left: -20px;
+    line-height: 55px;
+    position: absolute;
+    text-align: center;
+    top: -3px;
+    transition: all 0.3s ease 0s;
+    width: 55px;
+}
+#accordion .panel-title a.collapsed::after {
+    background: rgba(249, 255, 237) none repeat scroll 0 0;
+    border: 1px solid rgba(187, 210, 142, 0.5);
+    box-shadow: none;
+    color: #a6641c;
+    font-weight: bold;
+    content: "+";
+    height: 52px;
+}
+#accordion .panel-body {
+    background: transparent none repeat scroll 0 0;
+    border-top: medium none;
+    padding: 20px 25px 10px 9px;
+    position: relative;
+    text-align: justify;
+}
+#accordion .panel-body {
+    border-left: 1px dashed #a6641c;
+    padding-left: 25px;  
+    font-family: "Open Sans", sans-serif;
+}
+/* ----------------- NEW SEARCH BOX ----------------*/
+
+
+.single-search {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 45px;
+  background-color: rgba(187, 210, 142, 0.5);
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.search-area{
+  display: flex;
+  justify-content: center;
+}
+
+.c-height {
+  height: 100%;
+}
+
+.custom-input{
+  background: transparent;
+  border: 0;
+  outline: 0;
+  width: 0;
+  line-height: 35px;
+
+}
+
+input::placeholder {
+  color: #26262685;
+  font-size: 15px;
+}
+
+.single-search:hover > {
+  padding: 0 20px;
+  width: 300px;
+  caret-color:#262626;
+}
+.custom-input{
+  padding: 0 20px;
+  width: 300px;
+  caret-color:#262626;
+ 
+}
+
+.single-search:hover > .icon-area{
+  background:rgba(187, 210, 142, 0.5);
+  color: #1a301c;
+}
+
+.icon-area {
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  text-decoration: none;
+  color: #262626;
+}
+

@@ -1,0 +1,53 @@
+Categoria - 
+	{
+        "categoria": "",
+        "descricao": ""
+        }
+
+Pedido - 
+
+{
+        "qtdProduto": ,
+        "valorPago": ,
+        "venda": {
+            "id": ,
+            "usuario": {
+                "id": ,
+            }
+        },
+        "produto": {
+            "id": 
+	}
+    }
+
+Produto - 
+
+{
+        "titulo": "",
+        "descricao": "",
+        "linkFoto": "",
+        "preco": ,
+        "qtdEstoque": ,
+        "categoria": {
+            "id": 
+        }
+    }
+
+Usuario - 
+
+{
+        "nome": "",
+        "telefone": "",
+        "email": "",
+        "senha": ""
+}
+
+Venda - 
+
+ {
+        "id": ,
+        "dataVenda": "AAAA-DD-MM",
+        "usuario": {
+            "id": 
+        }
+    }

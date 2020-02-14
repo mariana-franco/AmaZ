@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="width: 17%" scope="col">LISTA DE VENDAS</th>
+            </tr>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Data Venda</th>
+                <th scope="col">Vendedor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let venda of vendas">
+                <th scope="row">{{venda.id}}</th>
+                <td>{{venda.dataVenda}}</td>
+                <td>{{venda.usuario.nome}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

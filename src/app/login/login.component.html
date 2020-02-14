@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row no-gutters">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 md-mb-30 sm-mb-30 justify-content-center">
+      <h2>ENTRAR</h2>
+
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+
+          <input matInput class="form-control" [ngClass]="{'is-invalid': _msgErroE}" id="email" required="required"
+            type="email" placeholder="Email" [(ngModel)]="usuario.email" (keyup)="validarEmail()" maxlength="255"
+            required>
+          <span class="invalid-feedback" *ngIf='_msgErroE'>{{_msgErroE}}</span>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+
+        <mat-form-field class="example-full-width">
+          <input matInput class="form-control" id="senha" required="required" type="password" placeholder="Senha"
+            [(ngModel)]="usuario.senha" required>
+          <p class="linkfp"><a class="linkfp" [routerLink]="'/contato'">Esqueceu sua senha?</a></p>
+        </mat-form-field>
+
+      </div>
+
+      <div class="logar justify-content-center">
+        <button type="submit" class="btn btn-primary btn-block" (click)="enviar()">Entrar</button>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>

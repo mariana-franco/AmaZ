@@ -1,0 +1,147 @@
+<nav class="navbar navbar-expand-lg navbar-dark cima">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="order-lg-last">
+    <ul class="nav navbar-nav justify-content-end">
+      <li class="nav-loginSenha">
+        <!-- Usuarios locais -->
+        <!-- <button *ngIf='log' [routerLink]="'/admin'" class="nav-link mat-button">{{usuario.nome}}</button> -->
+        <!--         <button *ngIf='!user || !log   ' [routerLink]="'/login'" class="nav-link mat-button">Entre</button>
+        <h5>ou</h5>
+        <button *ngIf='log'  (click)="logout()" class="nav-link mat-button">Sair</button>
+        <button *ngIf='!user || !log   '[routerLink]="'/cadastro'" class="nav-link mat-button">Cadastre-se</button> -->
+        <div class="text-center order-lg-last">
+          <a *ngIf="usuario.id != 0" mat-button style="color: white;" [routerLink]="'/admin'"
+            class="edit-btn btn btn-default btn btn-outline-transparent waves-effect recolhe">
+            {{usuario.nome}}</a>
+          <a *ngIf="usuario.id == 0" mat-button style="color: white;"
+            class="edit-btn btn btn-default btn btn-outline-transparent waves-effect recolhe" data-toggle="modal"
+            data-target="#elegantModalForm">
+            Entre</a>
+          <a *ngIf="usuario.id != 0" mat-button style="color: white;" (click)="logout()"
+            class="edit-btn btn btn-default btn btn-outline-transparent waves-effect recolhe">
+            Sair</a>
+          <a *ngIf="usuario.id == 0" mat-button style="color: white;" [routerLink]="'/cadastro'"
+            class="btn btn-default btn btn-outline-transparent waves-effect recolhe">Cadastre-se</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!--  INICIO DO MODAL  -->
+  <!-- Modal -->
+  <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <!--Content-->
+      <div class="modal-content form-elegant">
+        <!--Header-->
+        <div class="modal-header text-center">
+          <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel">
+            <strong>ENTRE</strong></h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body mx-4">
+          <!--Body-->
+          <div class="md-form mb-5">
+            <!-- EMAIL -->
+            <mat-form-field class="example-full-width">
+              <input matInput type="email" id="Form-email1" class="form-control validate class-input"
+                [ngClass]="{'is-invalid': _msgErroE}" id="email" required="required" type="email"
+                placeholder="Seu email " [(ngModel)]="usuario.email" (keyup)="validarEmail()" maxlength="255" required>
+              <span class="invalid-feedback" *ngIf='_msgErroE'>{{_msgErroE}}</span>
+              <label data-error="wrong" data-success="right" for="Form-email1">Ex: amaz@amaz.com.br</label>
+            </mat-form-field>
+          </div>
+          <!-- SENHA -->
+          <div class="md-form pb-3">
+            <mat-form-field class="example-full-width">
+              <input matInput type="password" id="Form-pass1" class="form-control validate class-input" id="senha"
+                required="required" type="password" placeholder="Sua senha" [(ngModel)]="usuario.senha" required>
+            </mat-form-field>
+            <!-- FIM SENHA -->
+
+            <p class="links"> Esqueceu sua <a data-dismiss="modal"
+                [routerLink]="'/contato'" class="linkc">
+                Senha?</a></p>
+            <p class="links"> Não possui conta? <a data-dismiss="modal"
+                [routerLink]="'/cadastro'" class="linkc">
+                Cadastre-se</a></p>
+
+          </div>
+          <div class="logar">
+            <button type="button" class="btn btn-block entrar recolhe" data-dismiss="modal"
+              (click)="enviar()">Entrar</button>
+          </div>
+        </div>
+        <!--Footer-->
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <!-- FIM DO MODAL -->
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+    <div style="height: 3em" class="d-flex flex-fill">
+
+      <div style="padding-top: 0.4em"
+        class="col-xl-3 order-xl-first justify-content-xl-start col-lg-3 order-lg-first justify-content-lg-start col-md-4 order-md-last justify-content-md-end col-sm-6 order-sm-last justify-content-sm-end col-6 order-last justify-content-end">
+        <a id="btnSearch" class="btn-search recolhe" (click)="capturar()"><i  class="fa fa-search"></i></a>
+        <input id="searchBar" [(ngModel)]="tituloNav" class="searchbar" type="text" placeholder="PESQUISAR PRODUTO...">
+      </div>
+
+
+
+      <div
+        class="logo recolhe col-xl-9 order-xl-last justify-content-xl-start col-lg-9 order-lg-last justify-content-lg-start col-md-8 order-md-first justify-content-md-end col-sm-6 order-sm-first justify-content-sm-end col-6 order-first justify-content-end">
+        <a>
+          <img style="cursor:pointer" src="assets/AMAZ2.png" [routerLink]="'/home'" width="130px" height="40px">
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <div class="col-12 ">
+      <ul class="nav navbar-nav mr-lg-auto justify-content-center">
+        <li class="nav-item active">
+          <button [routerLink]="'/home'" mat-button style="color: white;" href=""
+            class="btn btn-default btn btn-outline-transparent waves-effect recolhe"
+            data-parent="#accordion">Home</button><span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item">
+          <button [routerLink]="'/produtos'" mat-button style="color: white;" href=""
+            class="btn btn-default btn btn-outline-transparent waves-effect recolhe">Produtos</button>
+        </li>
+        <li class="nav-item">
+          <button [routerLink]="'/sobrenos'" mat-button style="color: white;" href=""
+            class="btn btn-default btn btn-outline-transparent waves-effect recolhe">Sobre Nós</button>
+        </li>
+        <li class="nav-item">
+          <button [routerLink]="'/comunidades'" mat-button style="color: white;" href=""
+            class="btn btn-default btn btn-outline-transparent waves-effect recolhe">Comunidades</button>
+        </li>
+        <li class="nav-item">
+          <button [routerLink]="'/contato'" mat-button style="color: white;" href=""
+            class="btn btn-default btn btn-outline-transparent waves-effect recolhe">Contato</button>
+        </li>
+        <li class="nav-item">
+          <button [routerLink]="'/faq'" mat-button style="color: white;" href=""
+            class="btn btn-default btn btn-outline-transparent waves-effect recolhe">Ajuda</button>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
